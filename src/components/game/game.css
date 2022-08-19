@@ -1,0 +1,53 @@
+h1 {
+    font-size: 18px;
+    text-align:center;
+}
+
+textarea {
+    font-family: 'Press Start 2P', cursive;
+    border: 3px solid black;
+    width: 80%;
+    margin: 0 auto;
+    outline: none;
+    height: 60vh;
+    background-image: linear-gradient(45deg, #00b800 , #28a128);
+    padding: 10px;
+}
+textarea:disabled {
+    background-image: linear-gradient(#a5a2a2 , #a5a2a2);
+}
+button {
+    font-family: 'Press Start 2P', cursive;
+    display: block;
+    margin: 0 auto;
+    border: none;
+    background: #a80020;
+    background: #00b800;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button:disabled{
+    cursor: not-allowed;
+}
+.counter{
+    background-color: transparent;
+    color: greenyellow;
+    width: 100vw;
+    font-size: 18vw;
+    opacity: .5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top:20vh;
+}
+.counter-off{
+    display: none;
+}
+@media screen and (max-width:760px) {
+    .counter{
+        top:40vh;
+    }
+}
